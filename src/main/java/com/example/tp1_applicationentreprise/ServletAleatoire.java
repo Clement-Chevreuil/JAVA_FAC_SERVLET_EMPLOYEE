@@ -6,12 +6,12 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "Servlet", value = "/Servlet")
+@WebServlet(name = "ServletAleatoire", value = "/ServletAleatoire")
 public class ServletAleatoire extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        response.getWriter().append("Le nombre al�atoire est : "+ alea());
+        response.getWriter().append("Le nombre aleatoire est : "+ alea());
     }
 
     @Override

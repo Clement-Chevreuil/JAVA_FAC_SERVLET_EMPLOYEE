@@ -8,7 +8,8 @@
 <h1><%= "Hello World!" %>
 </h1>
 <br/>
-<a href="ServletAleatoire">Servlet</a>
+<a href="ServletAleatoire">Nombre Aleatoire</a>
 <a href="connexion.html">Connexion</a>
+<a href="devinette.jsp">devinette</a>
 </body>
 </html>

@@ -8,6 +8,8 @@ import java.io.PrintWriter;
 
 @WebServlet(name = "ServletWelcome", value = "/ServletWelcome")
 public class ServletWelcome extends HttpServlet {
+
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession session = request.getSession(false);
@@ -15,10 +17,10 @@ public class ServletWelcome extends HttpServlet {
         PrintWriter pwriter = response.getWriter();
         if (session == null) {
             response.sendRedirect("ServletConnect");
-        } else {
+        }
+        else {
             String log= (String) session.getAttribute("login");
-
-            pwriter.append("Welcome "+log);
+            pwriter.append("Welcome " + log);
         }
     }
 
